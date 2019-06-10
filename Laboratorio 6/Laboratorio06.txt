@@ -1,0 +1,24 @@
+Alumno: Baldeón Ayala, Willy Alexis
+-----------------------------------
+
+1.10-	El error se debe a que estamos referenciando con el nombre incorrecto a la vista. El nombre
+	es "HomeScreen", no "Home".
+			(Ver imagen adjunta: 1.10.1 Configuración del Proyecto)
+
+	Una vez solucionado el error, podemos ver que configuramos el título de la vista. Esto fue
+	gracias	a que la declaramos como un objeto, lo que nos permite modificar diversas propiedades.
+			(Ver imagen adjunta: 1.10.2 Configuración del Proyecto)
+
+
+Conclusiones
+------------
+
+->	Utilizamos la propiedad "initialRouteName" de nuestro StackNavigator para indicar
+	cuál será la vista inicial al ejecutar la aplicación.
+
+-->	La función "navigate" nos sirve para cambiar de una vista a otra. Es equiparable a
+	los "Intent" de AndroidStudio.
+
+--->
+---->
+----->

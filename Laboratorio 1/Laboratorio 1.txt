@@ -1,0 +1,18 @@
+Alumno: Baldeón Ayala, Willy Alexis
+-----------------------------------
+
+1.4-	Luego de instalar React y usar la herramienta de creación de proyectos. Ejecutamos
+	el entorno de trabajo con el comando "npm start".
+		~ (Ver imagen adjunta: "1.4 Instalación y Configuración de ReactJS.PNG")
+
+Conclusiones	
+------------
+
+->	JavaScript realiza todas sus operaciones de manera asíncrona. Esto quiere
+	decir que ejecuta todo a la vez. Una clara desventaja en este aspecto es que
+	es probable que varias operaciones llegen a realizarse en un orden dinstinto
+	al esperado por el programador.
+
+--> 	El llamado "CallBack Hell" es el resultado de un código completamente anidado
+	con intenciones de ser secuencial. Estos códigos llegan a ser muy confusos y
+	dificultan el mantenimiento.
