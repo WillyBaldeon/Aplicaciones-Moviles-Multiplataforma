@@ -1,11 +1,64 @@
 Alumno: Baldeón Ayala, Willy Alexis
 -----------------------------------
 
+1.2-	Luego de crear nuestro proyecto "lab02", nos ubicamos en su directorio y en una nueva
+	consola ejecutamos el comando "npm start". Esto iniciará la aplicación con la vista y
+	componentes creados por defecto.
+		~ (Ver imagen adjunta: "1.2 Instalación y configuración de ReactJS.png")
+
+2.2-	Modificamos el archivo "Contador.js" para que el componente muestre únicamente un texto.
+	Luego, cambiamos la manera de invocarlo y ejecutamos el programa para verificar los cambios.
+		~ (Ver imagen adjunta: "2.2 Componentes en ReactJS.png")
+
+3.2-	Modificamos nuevamente nuestro componente; pero, esta vez mostrará un texto adicional
+	con un parámetro. Sin embargo, probamos la aplicación sin ingresar ningún parámetro.
+		~ (Ver imagen adjunta: "3.2 Uso de props en componentes.png")
+
+3.3-	Desde el archivo "App.js", agregamos un parámetro al componente al momento de invocarlo.
+	Al ejecutar la aplicación vemos que se muestra en pantalla el parámetro ingresado.
+		~ (Ver imagen adjunta: "3.3 Uso de props en componentes.png")
+
+3.5-	Agregamos un código a nuestro componente que verifica el tamaño del número pasado como
+	parámetro. Según sea el caso, se imprime un texto distinto.
+		~ (Ver imágenes adjuntas: "3.5.1 Uso de props en componentes.png" y
+					  "3.5.2 Uso de props en componentes.png")
+
+3.6-	Invocamos el componente dos veces seguidas pero con parámetros distintos para poder
+	ver directamente su comportamiento.
+		~ (Ver imagen adjunta: "3.6 Uso de props en componentes.png")
+
+
+4.10-	Con el gestor de dependencias, generamos componentes CSS utilizando el comando "npm run eject".
+	En nuestro archivo "App.js", importamos el archivo de estilos creado y lo aplicamos a nuestra
+	vista.
+		~ (Ver imagen adjunta: "4.10 Componentes CSS.png")
+
+
+5.6-	Implementamos tres botones en nuestro componente. Cada uno está asociado a una función
+	que modifica directamente el parámetro recibido. Para probar, invocamos dos componentes,
+	uno con parámetro 0 y el otro con 6.
+		~ (Ver imagen adjunta: "5.6 States del componente.png")
+
 Conclusiones	
 ------------
 
-->
--->
---->
----->
------>
+->	En cierto modo, el archivo "App.js" se puede considerar como el componente principal.
+	En él, debemos importar los demás componentes que usaremos e invocarlos donde queramos
+	y con los valores que necesitemos.
+
+-->	La función "render()" se puede considerar como un "return" porque contiene los
+	elementos que conforman el componente y toda la lógica que maneja sus datos.
+
+--->	A pesar de que invoquemos múltiples veces un mismo componente, los datos y elementos
+	de cada uno son independientes. Para esto, React hace uso del "state", el cual sirve
+	para almacenar información de cada componente. Para modificar sus valores, debemos utilizar
+	el método "setState".
+
+---->	Los componentes de React, al igual que las vistas de Android o los controladores de Swift,
+	tienen un ciclo de vida predefinido. Podemos acceder a él para personalizar y realizar
+	configuraciones aún más avanzadas sobre nuestros componentes.
+
+----->	Nos familiarizamos con el desarrollo de aplicaciones en React, empezando con la creación
+	del proyecto, la instalación de dependencias, el uso de componentes y la ejecución de la
+	aplicación. Por lo visto, React tiene mucho potencial por su fácil implementación y
+	por el hecho de simplificar el diseño de aplicaciones dinámicas.
