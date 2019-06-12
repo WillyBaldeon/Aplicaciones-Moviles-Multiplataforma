@@ -1,11 +1,80 @@
 Alumno: Baldeón Ayala, Willy Alexis
 -----------------------------------
 
+1.2-	Utilizamos el método "componentDidMount()" para acceder al primer ciclo de vida de nuestro
+	componente. Una vez en él, modificamos el estado "contador" para que se incremente en una
+	unidad cada segundo.
+		~ (Ver archivo adjunto: "1.3 Configuración de proyecto.gif")
+
+1.3-	Creamos un estado de tipo "Date" para poder acceder a la hora configurada en el dispositivo.
+	Utilizando nuevamente un intervalo de un segundo, actualizamos el estado y lo mostramos en
+	pantalla.
+		~ (Ver archivo adjunto: "1.4 Configuración de proyecto.gif")
+
+2.1-	Implementamos un elemento "FlatList" el cual sirve para manipular y renderizar los datos de
+	un array. En este caso, creamos un diccionario e imprimimos cada valor en pantalla.
+		~ (Ver imagen adjunta: "2.1 Listados en React Native.png")
+
+2.3-	Al ejecutar la aplicación, en la parte inferior se muestra una advertencia indicándonos
+	posibles problemas con nuestro código. En este caso, el conflicto se debe a que nuestro Array
+	no cuenta con llaves dejando a los valores sin conexión.
+		~ (Ver imagen adjunta: "2.3.1 Listados en React Native.png")
+	
+	Solucionamos la vulnerabilidad utilizando la función "keyExtractor".
+		~ (Ver imagen adjunta: "2.3.2 Listados en React Native.png")
+
+2.4	Creamos dos clases en el componente de estilos. Cada clase modifica los colores de fondo y
+	texto. Luego, utilizamos una condición para aplicar una clase a cada columna dependiendo
+	si esta es par o impar.
+		~ (Ver imagen adjunta: "2.4 Listados en React Native.png")
+
+2.5	Importamos el elemento TouchableOpacity de React Native y lo implementamos dentro de nuestra
+	FlatList de modo que contenga las celdas. El elemento TouchableOpacity se activa cuando es
+	seleccionado.  Simplemente opaca su contenido mejorando ligeramente la interacción con el usuario.
+	También, podemos establecer una acción dentro de su función "onPress". En este caso, configuramos
+	que, al hacer clic, se muestre un diálogo con un texto dinámico que cambia según la celda que
+	pulsemos.
+		~ (Ver archivo adjunto: "2.5 Listados en React Native.gif")
+
+2.7-	Con el método "ListHeaderComponent", agregamos una cabecera a nuestra lista. En este caso, la
+	cabecera se trata de un InputText que trabaja como buscador. Para que funcione, creamos un nuevo
+	valor en el State del componente para almacenar el texto ingresado. Por último, implementamos
+	una nueva función que se activa cuando el contenido del InputText cambia. Esta función filtra
+	nuestro Array con el texto ingresado y solo se muestran las coincidencias.
+		~ (Ver archivo adjunto: "2.7 Listados en React Native.gif")
+
+
+3.4	Instalamos la librería Axios y configuramos una conexión con la API del portal "YTS". Ahora, el
+	contenido que mostraremos en la FlatList será un JSON otorgado por una consulta en la API. Por
+	ello, ya no era necesario utilizar un Array de la manera como lo hacíamos hasta el momento. En
+	su lugar, creamos una nueva variable en el State del archivo que almacenará el resultado de la
+	consulta.
+		~ (Ver archivo adjunto: "3.4 Axios.gif")
 Conclusiones	
 ------------
 
-->
--->
---->
----->
------>
+->	En Windows, al utilizar la consola para instalar dependencias con npm, es importante estar atentos
+	de que no esté seleccionada ninguna parte con el Mouse. Si algún fragmento de la consola está
+	seleccionada, la instalación se pausa y si no nos damos cuenta podríamos estar un largo rato esperando
+	sin sentido.
+
+-->	Ejecutamos el comando "npm install --save axios" para agregar la librería Axios a nuestro proyecto.
+	Esta se trata de una conventiente biblioteca para realizar solicitudes HTTP. Por lo general, Axios
+	se conecta con una API pública.
+
+--->	Utilizamos Axios para llenar un Array con información devuelta por la API "YTS" de películas.
+	Posteriormente, plasmamos los datos obtenidos en nuestra FlatList.
+
+---->	Cuando ejecutamos nuestra aplicación, si el compilador detecta eventos extraños en el código, React
+	Native nos mostrará una recomendación en la parte inferior de la pantalla. Este aviso es muy útil
+	puesto que además de indicarte el posible problema, te indica claramente un procedimiento de solución.
+
+----->	A pesar de que nuestra aplicación tenga recomendaciones por parte de React Native, seguirá funcionando
+	y podrá utilizarse sin inconvenientes. Sin embargo, lo más recomendable es siempre solucionar las
+	advertencias, de lo contrario nuestra aplicación sufrirá una baja de rendimiento.
+
+------>	Conocimos el elemento FlatList de React Native. Este componente es equiparable a los Table View de
+	Android o Swift. Además, como es de esperar, tiene propiedades únicas que la diferencias de otros
+	mecanismos de listado. Una de las funcionalidades integradas en el laboratorio fue la de la recepción
+	de variables y objetos para utilizarlos como celdas.
+
