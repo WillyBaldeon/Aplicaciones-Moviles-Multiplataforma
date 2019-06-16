@@ -1,0 +1,65 @@
+Alumno: Baldeón Ayala, Willy Alexis
+-----------------------------------
+
+2.5-	Creamos tres vistas adicionales a nuestro App.js. Estas son "AuthLoading", "SignUp" y "SignIn".
+	Utilizando los conocimiento del laboratorio anterior, agregamos los enlaces de estas vistas en
+	el AppContainer de la aplicación e insertamos múltiples botones para utilizar el método "navigate"
+	de redirección. Además, incluímos un TabNavigatorBar y personalizamos los íconos de cada tabulación
+	utilizando las propiedades de la librería "Ionicons".
+			~(Ver gif adjunto: 2.5 Pantalla de carga y navegación Básica.gif)
+
+3.5-	Mejoramos la vista SignUp importando el elemento "ImageBackground" y aplicándolo únicamente en
+	esta vista con una imagen añadida a la carpeta "assets". También, para no dificultar la visibilidad
+	de título, modificamos las propiedades de texto de nuestra etiqueta.
+			~(Ver gif adjunto: 3.5 Pantalla de inicio.gif)
+
+
+3.8-	Agregamos un TextInput en la vista SignIn. Personalizamos sus propiedades para que sea vea mejor
+	teniendo en cuenta la imagen de fondo. También, haciendo uso de la librería "textinput-effects",
+	mejoramos aún más la apariencia de este elemento implementando un ícono apropiado.
+			~(Ver imagen adjunta: 3.8 Pantalla de inicio.png)
+
+3.9-	Hicimos unos ajustes adicionales para mejorar la estética del Input agregado. Luego, repetimos el
+	mismo procedimiento para crear TextInput adicional con su propio ícono.
+			~(Ver imagen adjunta: 3.9 Pantalla de inicio.png)
+
+
+4.3-	Agregamos una pequeña animación sobre los Inputs que se muestra cada vez que seleccionamos uno.
+	También, cambiamos el contenido del segundo Input para que al ingresar texto, este se reemplace
+	por asteriscos puesto que se trata de la contraseña.
+			~(Ver gif adjunto: 4.3 Conexión con API.gif)
+
+4.9-	Agregamos elementos "TouchableOpacity" dentro de nuestros Inputs. Estos elementos tienen algunas
+	propiedades visuales que destacan sobre los TextInputs. También, son capaces de detectar cuando
+	se selecciona el input al que está relacionado. Luego, añadimos un ícono en la parte derecha del
+	cuadro de contraseña que, al ser pulsado, muestra el contenido ingresado y al reactivarse, vuelve
+	a convertir la cadena en asteríscos.
+			~(Ver gif adjunto: 4.9 Conexión con API.gif)
+
+5.2-	Importamos e implementamos el componente "KeyboardAvoidingView" dentro del contenedor principal.
+	Este componente tiene la capacidad de acomodar la vista por encima del teclado virtual cuando este
+	se muestre.
+			~(Ver gif adjunto: 5.2 Acomodación automática.gif)
+
+Conclusiones	
+------------
+
+->	Para este laboratorio, nuevamente instalamos la librería "react-navigation" puesto que trabajamos
+	con múltiples vistas. Para esta ocasión, implementamos el elemento de navegación TabNavigator.
+
+-->	Implementamos imágenes agregando los archivos deseados en cierto directorio y luego referenciándolos
+	con el componente ImageBackground. Así mismo, aunque no lo hayamos aplicado, agregamos el soporte de
+	archivos .GIF desde el Build.gradle de nuestro proyecto Android.
+
+--->	Con el fin de personalizar nuestros componentes y mejorar las metáforas de cada elemento, instalamos
+	la libería "vector-icons" de ReactNative. Esta librería nos da acceso a una gran biblioteca de íconos
+	a los que podemos acceder fácilmente creando una instancia de esta librería.
+
+---->	Mejoramos nuestros componentes TextInput instalando la librería "textinput-effects" de ReactNative.
+	Esta librería permite agregar animaciones sencillas sobre nuestro elementos TextInput. Adicionalmente,
+	implementamos el componente "TouchableOpacity" para realizar configuraciones extra al momento de
+	seleccionar cada uno de estos elementos.
+
+----->	El desarrollo del laboratorio tuvo como finalidad diseñar las vistas principales de un gran proyecto
+	de React. Como primer paso, acomodamos los elementos, los personalizamos y realizamos las conexiones
+	necesarias para una correcta navegación.
