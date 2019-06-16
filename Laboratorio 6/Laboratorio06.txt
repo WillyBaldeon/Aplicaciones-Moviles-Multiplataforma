@@ -1,24 +1,66 @@
 Alumno: Baldeón Ayala, Willy Alexis
 -----------------------------------
 
-1.10-	El error se debe a que estamos referenciando con el nombre incorrecto a la vista. El nombre
-	es "HomeScreen", no "Home".
-			(Ver imagen adjunta: 1.10.1 Configuración del Proyecto)
+1.6-	Luego de instalar las librerías necesarias para la navegación, importamos y creamos un
+	componente de tipo StackNavigator. Con él, creamos el contenedor de nuestra aplicación
+	lo que añadió una barra en la parte superior de la vista. Esta se trata de la barra de
+	navegación.
+			~(Ver imagen adjunta: 1.6 Configuración del Proyecto.png)
 
+1.8-	En nuestro componente principal, cramos una clase adicional llamada "Detalles". Entonces,
+	tuvimos dos clases dentro de nuestro App.js. Creamos un botón en cada clase y utilizando
+	la función "navigate" dentro del método "onPress" de los botones, logramos direccionar de
+	una vista a la otra.
+			~(Ver gif adjunto: 1.8 Configuración del Proyecto.gif)
+
+1.10-	El error se debe a que estamos referenciando con el nombre incorrecto a la vista. El nombre
+	de nuestra clase es "HomeScreen", no "Home".
+			~(Ver gif adjunto: 1.10.1 Configuración del Proyecto.gif)
+	
 	Una vez solucionado el error, podemos ver que configuramos el título de la vista. Esto fue
 	gracias	a que la declaramos como un objeto, lo que nos permite modificar diversas propiedades.
-			(Ver imagen adjunta: 1.10.2 Configuración del Proyecto)
+			~(Ver imagen adjunta: 1.10.2 Configuración del Proyecto)
 
+
+3.1-	Como lo hicimos anteriormente, configuramos la barra de navegación cambiando alguna de sus
+	propiedas básicas como lo son el tipo de letra y color de fondo.
+			~(Ver gif adjunto: 3.1 Configuración por defecto.gif)
+
+3.4-	Importamos el componente "Perfil" y lo agregamos en nuestro "StackNavigator". Hacer esto nos
+	permite redirigir a esa vista pero para hacerlo, debemos configurar un evento que mande la
+	señal. En este caso, agregamos un botón adicional configurado para navegar por esa vista.
+			~(Ver gif adjunto: 3.4 Configuración por defecto.gif)
+
+4.3-	Implementamos una barra lateral utilizando el componente "DrawerNavigator". Entonces,
+	reemplazamos nuestra AppContainer por este nuevo elemento. Solo con hacer esto, hemos alterado
+	la navegación de nuestra aplicación. En vez de mostrarse la barra de navegación en la parte
+	superior, se muestra un menú al arrastrar hacia un lado.
+			~(Ver gif adjunto: 4.3 Parámetros en ruta.gif)
+
+4.4-	Realizamos una última variación, en lugar de utilizar la barra lateral con nuestro DrawerNavigation,
+	importamos el componente "BottomTabNavigator" y lo aplicamos en la vista. El menú esta vez se
+	trata de botones con tabulaciones en la parte inferior.
+			~(Ver gif adjunto: 4.4 Parámetros en ruta.gif)
 
 Conclusiones
 ------------
 
-->	Utilizamos la propiedad "initialRouteName" de nuestro StackNavigator para indicar
-	cuál será la vista inicial al ejecutar la aplicación.
+->	Utilizamos la propiedad "initialRouteName" de nuestro StackNavigator para indicar cuál será la
+	vista inicial al ejecutar la aplicación. De igual modo, el método "navigate" nos permite hacer
+	una transición de una vista a otra. Es equiparable a los "Intent" de AndroidStudio.
 
--->	La función "navigate" nos sirve para cambiar de una vista a otra. Es equiparable a
-	los "Intent" de AndroidStudio.
+-->	Creamos un "AppContainer" con el que declaramos todas nuestras vistas. Sobre este contendor, es
+	posible implementar componentes de navegación tales como el StackNavigator, DrawerNavigator y TabNavigator.
 
---->
----->
------>
+--->	Instalamos la librería "react-navigation" con nuestro gestor NPM. Esto nos permite acceder a múltiples
+	componentes para mejorar el desplazamiento entre vistas. Estos componentes son muy sencillos de
+	implementar además de personalizables. También, son capaces de interactuar con gestos y cuentan con
+	animaciones.
+
+---->	Diseñamos nuevas vistas para utilizarlas en nuestra aplicación. Cada una debe tener su propio método
+	"render()" y deben ser declaradas como clases para que, posteriormente, sean añadidas al ContainerApp
+	del sistema.
+
+----->	Hasta la fecha, únicamente desarrollábamos aplicaciones de una sola vista. Gracias a los conocimientos
+	adquiridos al desarrollar el laboratorio y las múltiples opciones que nos ofrece ReactNative, podremos
+	desarrollar aplicaciones más útiles y complejas.
