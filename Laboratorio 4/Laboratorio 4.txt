@@ -1,0 +1,98 @@
+Alumno: Baldeón Ayala, Willy Alexis
+-----------------------------------
+
+1.6-	Nos ubicamos en nuestro directorio de trabajo y creamos un nuevo proyecto de React. Lo ejecutamos
+	sin realizar ninguna modificación con el comando ya conocido (react-native run-android).
+		~ (Ver imagen adjunta: 1.6 Configuración del proyecto.png)
+
+2.6-	Modificamos nuestro componente "Contador" de modo que imprima en un texto un parámetro llamado
+	"valor". Los parámetros se entregan al momento de invocar un componente, por eso, modificamos
+	nuestro App.js creando tres componentes seguidos y otorgando parámetros de distinto valor.
+		~ (Ver imagen adjunta: 2.6 Creación de un componente.png)
+
+3.1-	En nuestro componente, agregamos un nuevo texto. Sin embargo, este imprime un estado declarado
+	internamente por el componente. Entonces, vemos que tenemos dos datos: uno otorgado al momento de
+	invocarse el componente y otro creado junto con este.
+		~ (Ver imagen adjunta: 3.1 Estado del componente.png)
+
+3.2-	Agregamos dos botones y personalizamos el texto y color de cada uno. Al igual que con cualquier otro
+	elemento visual de ReactNative, para utilizarlo es necesario realizar la importación adecuada en la
+	parte superior del archivo. Por ahora, los botones no tienen ninguna acción.
+		~ (Ver imagen adjunta: 3.2 Estado del componente.png)
+
+3.3-	Creamos dos funciones que modifican el valor del estado del componente utilizando el método "setState".
+	Luego, asignamos cada función al botón respectivo con el evento "onPress".
+		~ (Ver gif adjunto: 3.3 Estado del componente.gif)
+
+5.3-	Realizamos múltiples cambios y mejoras sobre la aplicación para igualar el estado "valor" al argumento
+	proporcionado al crear el componente. También, utilizamos el método "componentDidUpdate", que forma pate
+	del ciclo de vida de los componentes, para verificar que el estado siempre se trate de un número utilizando
+	la función "isNaN". Esto último se implemento puesto que en el App.js agregamos un TextInput para modificar
+	directamente el estado de los componentes.
+		~ (Ver gif adjunto: 5.3 Ciclo de vida del componente.gif)
+
+
+	Ejercicio Propuesto
+	--------- ---------
+
+	Considerado lo aprendido en el laboratorio, para desarrollar la calculadora se utilizó únicamente
+	un componente. Este tiene dos estados "valor1" y "valor2". El usuario proporciona dichos estados
+	como argumentos a través de los TextInputs de la parte superior. El componente, al recibir los valores,
+	los asigna de inmediato a los estados respectivos con el método "setState".
+
+	Agregamos cuatro botones cada uno personalizado de manera distina y con una función asignada en su evento
+	"onPress". Al pulsarlo, se operan los valores y el resultado se almacena en otro estado que se muestra
+	en una etiqueta en la parte inferior.
+
+
+	Se implementó una validación que verifique que los datos ingresados son números para evitar posibles
+	errores aritméticos.
+			~ (Ver gif adjunto: 6. Ejercicio propuesto.gif)
+
+Conclusiones	
+------------
+->	Cuando querramos referirnos a una variable o valor dentro de una cadena de texto, debemos utilizar
+	llaves '{}' para que JavaScript reconozca que referenciaremos un dato.
+
+-->	Conocimos los ciclos de vida de los componentes y probamos en nuestro proyecto el método "componentDidUpdate".
+	Los ciclos de vida son secuencias que se siguen durante el montaje o ejecución de un componente. React
+	nos permite acceder a ellos mediante varios métodos. Utilizar estos métodos puede ser muy útil en mútiples
+	situaciones, porque nos permiten controlar aún más el comportamiento que tendrá nuestro componente.
+
+--->	Implementamos diversos elementos visuales del grupo de React. Para ello, basat con importarlos de la librería
+	"react-native" y tendremos acceso a todas sus configuraciones y propiedades.
+
+---->	Personalizamos nuestra vista modificando los colores, textos y tamaños de fuente de cada elemento. En ese
+	sentido, las propiedades son muy similares a CSS. La única diferencia es que en React no se usan subguiónes.
+
+----->	Creamos componentes y modificamos independienteme los estados de cada uno. Nos ayudamos de los argumentos
+	proporcionados al momento de invocar el componente utilizando el método "setState". Los estados son una
+	configuración propia e independiente de cada componente, esto nos permitió manipular datos sin alterar
+	a los demás componentes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
