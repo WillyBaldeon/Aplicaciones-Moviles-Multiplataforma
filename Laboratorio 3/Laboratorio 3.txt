@@ -1,16 +1,35 @@
 Alumno: Baldeón Ayala, Willy Alexis
 -----------------------------------
 
-1.2-	Luego de crear nuestro proyecto "lab02", nos ubicamos en su directorio y en una nueva
-	consola ejecutamos el comando "npm start". Esto iniciará la aplicación con la vista y
-	componentes creados por defecto.
-		~ (Ver imagen adjunta: "1.2 Instalación y configuración de ReactJS.png")
+1.6-	Configuramos las variables de entorno para indicar al sistema dónde se almacenarán los datos
+	correspondientes a las diferentes versiones de SDK que instalamos.
+
+3.10-	Luego de modificar el contenido del componente principal, agregamos una imagen en una carpeta
+	específica y accedemos al archivo con el comando "require" y la ruta de este. Ejecutamos la
+	aplicación con el comando "react-native run-android" teniendo conectado nuestro dispositivo.
+		~ (Ver imagen adjunta: 3.10 Estructura del Proyecto.png)
 
 Conclusiones	
 ------------
-*Vemos que al crear un componente y queremos usarlos debemos importarlo con la palabra "import", luego haciendo referencia de la ruta de ubicacion despues de la palabra "from".
-*Se utiliza el etiquetado tradicional de html en el componentes para visualizar los elementos creados
-*La palabra reservada "this" permite hacer referencia al mismo componente de la clase contador.
-*Las propiedades en los componentes son como valores asignados, pueden variar independiemtemente entre componentes y se puede ingresar con ".props.valor"
-*Los estados de los componentes le permiten tener un ciclo de vida, como vemos en el laboratorio se le esta asignando el mismo valor de la propiedad del componente.
-*Podemos crear controladores, como botnones para modificar los valores del estado del componente, notar que para cambiar el valor de un estado debemos utilizar ".setState" para establecer su nuevo valor.
+->	Instalamos gestor Chocolatey con el comando "choco install -y nodejs.install python2 jdk8". Esta
+	aplicación ayuda enormemente al momento de instalar otros gestores en Windows. Posteriormente lo
+	usamos para instalar ReactNative.
+
+-->	Instalamos ReactNative de manera global para poder crear aplicaciones de este tipo en cualquier
+	directorio. Para ello, utilizamos el comando: "npm install -g react-native-cli".
+
+--->	Podemos utilizar tanto emuladores como dispositivos reales para probar nuestras aplicaciones
+	en React. Si optamos por usar equipos físicos, debemos asegurarnos de tener instalados los
+	SDKs de Android necesario.
+
+---->	Seguramente no necesitaremos instalar todos los SDKs, pero es recomendable tener todos actualizados
+	desde la versión del API 21 para poder utilizar equipos con Android 5.0 en adelante.
+
+----->	Podemos utilizar Android Studio para gestionar nuestras SDKs fácilmente. Asímismo, para ejecutar
+	nuestras aplicaciones, podemos crear un emulador personalizado e iniciarlo desde la misma plataforma.
+
+------>	Luego de instalar ReactNative en nuestro equipo de manera global, podemos crear proyectos de este
+	tipo desde cualquier directorio fácilmente con el comando "react-native init nombre_proyecto".
+
+------> Para instalar aplicaciones en un dispositivo real, debemos conectarlo mediante USB, activar la
+	depuración USB desde las opciones de desarrollador y permitir instalaciones por este medio.
