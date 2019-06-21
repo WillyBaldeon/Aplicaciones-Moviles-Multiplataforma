@@ -1,0 +1,38 @@
+Alumno: Baldeón Ayala, Willy Alexis
+-----------------------------------
+
+3.1-	Instalamos las librerías necesarias para la ejecución del laboratorio. Después, creamos el
+	componente Map el cual hará uso de ReactNativeMaps. En este componente configuramos los
+	parámetros necesarios para mostrar el mapa de Google en nuestra aplicación. También, capturamos
+	las coordenadas de latitud y longitud del dispositivo accediendo a su GPS. De este modo,
+	mostramos el mapa correspondiente a su ubicación.
+			~(Ver gif adjunto: 3.1 Obtención de permisos de Geo Localización.gif)
+
+6.3-	Importamos el componente Marker y utilizando nuestras coordenadas, lo situamos en el mapa para
+	expresar nuestra posición actual. También, habilitamos el método "onDragEnd" para que podamos
+	arrastrar el marcador en otro lugar. Agregamos los estilos proporcionados por el docente para
+	personalizar nuestra vista del mapa. Finalmente, importamos el componente Floating-Action de
+	React que nos permite ubicar un botón flotante en un lado de nuestra aplicación. Detectamos su
+	toque y desplegamos dos nuevos botones encima de este. Por ahora, configuramos ambos botones para
+	que redirigan a la vista anterior.
+			~(Ver gif adjunto: 6.3 Botón flotante.gif)
+
+Conclusiones	
+------------
+
+->	Instalamos la librería ReactNativeMaps para dar soporte de mapas a nuestra aplicación. Esta librería
+	utiliza el servicio de Google Maps. Por ello, para implementarla debidamente debemos proporcionar 
+	una Key de desarrollador registrándonos en la página oficial de GoogleMaps.
+
+-->	Cambiamos el estilo de nuestro mapa accediendo a la propiedad "customMapStyle". Este método nos
+	permite modificar las características de las calles, avenidas, textos, relieve y muchas otras
+	propiedades del componente Map.
+
+--->	Implementamos en nuestra vista el componente Floating-Action. Con este elemento, podemos ofrecer
+	funcionalidades adicionales a nuestros usuarios. Por lo general se usan para accesos rápidos puesto
+	que el botón siempre está a la vista del usuario sin importar los desplazamientos que realicemos.
+
+---->	Al desarrollar el laboratorio, habilitamos que nuestra aplicación, a través del GPS del dispositivo,
+	muestre el mapa correspondiente a la zona donde se ejecuta el sistema. Utilizamos diversos elementos
+	visuales como botones y marcadores para que el mapa sea funcional. De igual modo, conocimos la manera
+	de personalizar absolutamente todos los apartados con los que cuenta el componente de GoogleMaps.
