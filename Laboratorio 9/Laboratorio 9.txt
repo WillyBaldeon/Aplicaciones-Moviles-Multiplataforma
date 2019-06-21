@@ -1,0 +1,49 @@
+Alumno: Baldeón Ayala, Willy Alexis
+-----------------------------------
+
+3.2-	Luego de hacer pequeñas modificaciones en nuestra API, configuramos la librería Camera
+	de ReactNative. Implementamos una nueva vista y un componente adicional que nos permita
+	acceder a esta librería. También, añadimos un nuevo botón en nuestras opciones de navegación
+	para redirigirnos a la vista creada. Puesto que usaremos la Cámara, agregamos una validación
+	que permite al usuario darnos acceso a su cámara; este apartado lo agregamos en el ciclo de
+	vida del componente para que, en caso el usuario rechace, vuelva a aparecer el cuadro la
+	siguiente vez que acceda al componente.
+			~(Ver gif adjunto: 3.2 Creación de componente Cámara.gif)
+
+3.3-	Utilizando el visualizador de registro de React, captamos la señal que se emite cuando el
+	usuario habilita el permiso de la cámara y esta se ejecuta.
+			~(Ver imagen adjunta: 3.3 Creación de componente Cámara.png)
+
+4.2-	Modificamos la función relacionada al botón "Tomar Foto" de nuestro componente Camara. Ahora,
+	la acción se conecta a axios y crea una nueva carpeta. Posteriormente usaremos ese directorio
+	para almacenar el archivo.
+			~(Ver imágenes adjuntas: 4.2.1 Subiendo la imagen a nuestro servidor.png,
+						 4.2.2 Subiendo la imagen a nuestro servidor.png y
+						 4.2.3 Subiendo la imagen a nuestro servidor.png)
+
+Conclusiones	
+------------
+
+->	La librería ReactNativeCamera nos permite implementar la funcionalidad de acceder a la cámara
+	del dispositivo. En realidad utiliza funciones muy simples y lo único que requiere por parte del
+	usuario es que permita el acceso a la cámara.
+
+-->	Con nuestro gestor NPM, agregamos la librería Multer en la API desarrollada. Multer sirve para
+	implementar una estructura de directorios y manejar archivos según solicitudes. En el laboratorio
+	lo utilizamos para crear una nueva carpeta y almacenar archivos en ella.
+
+--->	Implementamos validaciones para que el usuario permita que la aplicación acceda a las funciones
+	cámara y micrófono. Para asegurarnos de que la aplicación no quede inservible si el usuario rechaza
+	las solicitudes, manipulamos el ciclo de vida de nuestros componentes para que la validación
+	vuelva a aparecer.
+
+---->	Al desarrollar el laboratorio, dotamos a nuestra aplicación con la capacidad de acceder a la cámara
+	del dispositivo. También, configuramos la acción de capturar imágenes con el método TakePicture de
+	la librería ReactNativeCamera. Estos archivos serán almacenados posteriormente en un apartado de
+	nuestro servidor web con ayuda de Multer.
+
+
+
+
+
+
