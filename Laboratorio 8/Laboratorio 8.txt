@@ -1,0 +1,65 @@
+Alumno: Baldeón Ayala, Willy Alexis
+-----------------------------------
+
+2.4-	Instalamos la librería Socket.io y configuramos nuestro archivo "axios.js" para poder consumir
+	nuestra API. También, modificamos la IP de nuestro Index e iniciamos nuestro servicio web. Cuando
+	dectecta que una aplicación se conecta por medio de Socket.io, se imprime un mensaje en la consola
+	que nos notifica lo sucedido.
+			~(Ver imagen adjunta: 2.4 Configuración de proyecto.png)
+
+4.1-	Realizamos múltiples cambios en nuestro componente Home de modo que, al iniciarse la vista, se
+	obtenga el Token del usuario logeado. Manipulamos también el ciclo de vida de nuestros componentes
+	para realizar consultas a la API en múltiples ocasiones. Instalamos la librería GiftedChat y la
+	aplicamos en nuestro componente Chat para mostrar una vista personalizada.
+	
+	Finalmente, agregamos nuevos botones de redirección que nos permitan navegar efectivamente en
+	nuestra aplicación sin necesidad de usar un NavigationView adicional.
+			~(Ver gif adjunto: 4.1 Probando la aplicación.gif)
+
+Conclusiones	
+------------
+
+->	Utilizamos el comando "react-native log-android" para mostrar los registros de la aplicación
+	en nuestra consola. Acceder a estos registros nos permite ver los procesos que ocurren mientras
+	nuestra aplicación se ejecuta.
+
+-->	Conectamos nuestra aplicación React con la API desarrollada anteriormente utilizando Socket.io. Esta
+	librería permite que múltiples instancias se conecten en un solo servidor. La única configuración 
+	que se debe realizar es proporcionar la IP del servidor y estar conectado a la mísma red de este.
+
+--->	La librería GiftedChat nos proporciona una interfaz personalizable para diseñar una aplicación de
+	chat. Podemos utilizarla para agregar etiquetas flotantes de mensajes que muestran la hora y el
+	texto enviado.
+
+---->	Mejoramos algunos apartados visuales de nuestra aplicación además de diseñar la vista Chat. Sin embargo,
+	el principal avance de nuestro proyecto en este laboratorio fue la conexión a nuestro servicio web
+	con la ayuda de Socket.io.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
