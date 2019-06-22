@@ -1,0 +1,39 @@
+Alumno: Baldeón Ayala, Willy Alexis
+-----------------------------------
+	
+3.6-	Luego de realizar las instalaciones de los paquetes necesarios, procedimos modificando
+	nuestra pantalla de inicio. Para ello, creamos el archivo "IconBox" el cual se trata de
+	un componente que usa el elemento TouchableOpacity para agregar botones. Referenciando
+	este archivo, agregamos 5 botones personalizados con los íconos adecuados. Después, creamos
+	nuevas vistas con contenido básico para relacionarlas a cada botón.
+			~(Ver gif adjunto: 3.6 Vista de inicio.gif)
+
+4.6-	Diseñamos la vista EditarPerfil en donde mostramos información del usuario logeado. En
+	esta vista se muestra también una imagen de perfil. Esta imagen es  consumida del servicio
+	GRavatar utilizando el email del usuario. Por ahora, la vista no realiza ninguna acción.
+			~(Ver gif adjunto: 4.6 Vista de Perfil de Usuario.gif)
+
+Conclusiones	
+------------
+
+->	Instalamos la librería MD5 de JavaScript. Como ya vimos en el curso paralelo de Desarrollo
+	Web, esta librería nos permite almacenar cookies en nuestro sistema para recopilar información.
+	Podemos orientar su uso de muchas maneras, en este caso, lo utilizamos para almacenar el ícono
+	de nuestro usuario combinando MD5 con la tecnología GRavatar.
+
+-->	Creamos múltiples archivos de vistas y los referenciamos debidamente en nuestro DraweNavigator.
+	Asímismo, implementamos nuevos botones para redirigir a cada uno de los componentes.
+
+--->	Para mantener un stándar en nuestra aplicación, creamos un nuevo directorio con los archivo
+	"Styles.js" y "IconBox.js. Este método nos permite otorgar estilos fácilmente a los diversos
+	apartados de nuestra aplicación manteniendo una apariencia uniforme.
+
+---->	Modificamos nuestro método de acceso de sesión de modo que el sistema conozca más datos del usuario
+	logeado, tales como su email, su token y su ID. Posteriormente, usamos esos datos para hacer una
+	experiencia de usuario mejor enfocada. Además, utilizando el servicio de GRavatar, cargamos una imagen
+	adecuada para mostrarla en el perfil de cada usuario.
+
+----->	El desarrollo del laboratorio tuvo como finalidad mejorar la vista inicial con íconos y nuevas
+	redirecciones. Esta pantalla es sumamente importante, puesto que es la primera con la que el usuario
+	interactúa. También, agregamos una vista muy importante que posteriormente servirá para que cada
+	usuario modifique sus datos a través de nuestra API.
