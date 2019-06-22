@@ -1,0 +1,43 @@
+Alumno: Baldeón Ayala, Willy Alexis
+-----------------------------------
+	
+2.2-	Después de realizar las instalaciones necesarias con nuestro gestor NPM, nos ocupamos de
+	implementar la vista Configuración creada en el laboratorio anterior. Utilizamos el componente
+	SettingsList para establecer un diseño estándar de configuraciones móviles. Sobre este componente,
+	agregamos varios items y configuramos sus propiedades básicas además de eventos onPress.
+			~(Ver gif adjunto:2.2 Vista de Configuración.gif)
+
+3.2-	Luego de diseñar nuestra pantalla de configuración, nos dispusimos a implementar una lista con
+	FlatList en el archivo correspondiente. Accedimos al ciclo ComponentDidMount para realizar una
+	consulta a una API pública que retorna datos aleatorios. Utilizando estos datos, llenamos la lista.
+	Sin embargo, limitamos la consulta para que solo retorne n elementos. Después, agregamos una Piecera
+	justo debajo de la lista con un elemento TouchableOpacity que, al pulsarlo, se consulta nuevamente
+	la API con el fin de cargar más elementos.
+			~(Ver gif adjunto:3.2 Vista de Configuración.gif)
+
+				-NOTA: La prueba realizada falló debido que el dispositivo no contaba con
+				       conexión a internet y no pudo comunicarse con la API.
+
+Conclusiones	
+------------
+
+->	Instalamos la librería Settings-List de ReactNative y la utilizamos para diseñar nuestra propia
+	pantalla de configuración. Esta librería proporciona elementos altamente personalizables para crear
+	una lista de configuraciones.
+
+-->	Utilizamos el elemento FlatList para proporcionar una lista de elementos a nuestro usuario. Sin embargo,
+	poniéndonos en la situación de estar ante demasiados registros, diseñamos la vista de modo que cargue
+	solo un número limitado de elementos. Básicamente como páginas, donde se usan botones para navegar entre
+	los items.
+
+--->	Implemetamos nuestra propia vista de configuración haciendo uso de varios elementos conocidos durante el
+	curso, como TouchableOpacity, Alerts, TextFields y la introducción de Sliders. Siempre teniendo en cuenta
+	que la intención de una pantalla de configuración es alterar ciertas propiedades o comportamientos de la
+	aplicación.
+
+---->	El desarrollo del laboratorio nos permitió completar dos apartados más de nuestra aplicación. Conocimos
+	muchas buenas prácticas como no sobrecargar una lista o aplicar estilos facilmente desde un componente
+	estilizado. Todos estos conocimientos lograron desarrollar nuestra App de Tecsup que va desde consumo de
+	una API hasta navegaciones con Layouts.
+ 
+ 
